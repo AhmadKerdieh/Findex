@@ -59,7 +59,7 @@ const ResultsScreen = () => {
     const {request} = require('gaxios');
 
     const rs = await request({
-      url:`https://www.googleapis.com/customsearch/v1?key=AIzaSyDsauZHWVq0EEjNJtn6EMLDWeCxPP7V-T8&cx=8496cb49c4b094e5c&q=${query}`
+      url:`https://www.googleapis.com/customsearch/v1?key=APIKEY&cx=EngineKeyq=${query}`
     })
     const result = rs.data.items;
     setResultList(result);
